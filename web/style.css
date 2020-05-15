@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  color: #ccc;
+  overflow:hidden;
+  background: #031321;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.neon {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ccc;
+  text-tranform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 2px 2px;
+}
+
+.neon:hover {
+  color: #255784;
+  background: #ccc;
+  box-shadow: 0 0 10px #ccc, 0 0 40px #ccc, 0 0 80px #ccc, 0 0 100px #ccc;
+}
+
+.nav{
+    display: table;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav li {
+    display: table-cell;
+    width: 170px;
+    height: 70px;
+    align-items: center;
+}
+
+.text{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  aligne-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.boxes{
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0 40px;
+}
+
+.boxes .box{
+  position: relative;
+  height: 400px;
+  background: #060c21;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+}
+
+.content h2 {
+  position: absolute;
+  top: -200px;
+  right: 20px
+  margin: 0;
+  padding:
+}
