@@ -1,108 +1,33 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Website not available</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Rezox Bot</a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <img src="https://cdn.glitch.com/80ebeb49-8e8a-4ad4-be2c-385121bb7883%2Fcurve.png" class="wave">
-      <div class="contentBx">
-        <h2>
-          Website available soon
-        </h2>
-        <p>
-          DESCRIPTION DU BOT DESCRIPTION DU BOT DESCRIPTION DU BOT DESCRIPTION DU BOT DESCRIPTION DU BOT 
-        </p>
-        <div class="countdown">
-          <div class="time">
-                <div id="day">
-                    99
-                </div>
-                <span>Days</span>
-          </div>
-          <div class="time">
-                <div id="hour">
-                    9
-                </div>
-                <span>Hours</span>
-          </div>
-          <div class="time">
-                <div id="minute">
-                    9
-                </div>
-                <span>Minutes</span>
-          </div>
-          <div class="time">
-                <div id="second">
-                    9
-                </div>
-                <span>Seconds</span>
-          </div>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MrSheldon">
+    <link id="theme-style" rel="stylesheet" href="css/main.css">
+</head>
+
+<body bgcolor="#7289DA">
+    <ul>
+        <a href="#"><img width="60" height="60" class="animated rotateIn" src="./rezox.png" style="border-radius: 10px;" /></a>
+    </ul>
+
+    <div class="flex-item">
+        <img src="https://mrsheldon.me/files/785375.gif" alt="" width="800" height="600" style="float: left; border-radius: 10px;" />
+        <div>
+            <h1 class="ariel" style="font-size:60px;"><span style="color: #ffffff;">Rezox</span></h1>
+            <div class="ariel" style="font-size:40px;"><span style="color: #ffffff;">Discord Server Management Bot</span></div>
+            <br>
+            <p><button class="butn"><a href="https://discordapp.com/oauth2/authorize?client_id=714837889892089906&scope=bot&permissions=2146958847">Invite</a></button>&nbsp; &nbsp;<button class="butn"><a href="https://discord.gg/JdYMEEV">Support</a></button>&nbsp; &nbsp;<button class="butn"><a href="/commands">Commands</a></button></p>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
-        <a href="#" onclick="toggle();">Stay Updated!</a>
-        
-      </div>
-      <div class="imgBx">
-          <img class ="img" src="https://cdn.glitch.com/80ebeb49-8e8a-4ad4-be2c-385121bb7883%2Fman.png">
-        </div>
-      <ul class="sci">
-        <li><a href="#"><img src="disc.png"></a></li>
-      </ul>
-    </section>
-    <div class="newsletter">
-      <h2>Stay Tuned</h2>
-      <p>Get notified at launch</p>
-      <div class="inputBox">
-        <form>
-          <input type="email" name="" required="" placeholder="Enter your email address">
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-      <img src="https://cdn.glitch.com/80ebeb49-8e8a-4ad4-be2c-385121bb7883%2Fclose.png?v=1589495015349" class="close" onclick="toggle();">
     </div>
-    <script type="text/javascript">
+    <h6 style="color:white;">Template made by <a href="https://mrsheldon.me">MrSheldon</a> | Copyright © 2018 YOUR_NAME All Rights Reserved</h6>
+</body>
 
-      function toggle(){
-        var newsletter = document.querySelector(".newsletter");
-        newsletter.classList.toggle("active")
-      }
-
-
-      var countDate = new Date('May 30, 2020 00:00:00').getTime();
-      
-      function newYear(){
-        var now = new Date().getTime();
-        gap = countDate - now;
-        
-        var second = 1000;
-        var minute = second * 60;
-        var hour = minute * 60;
-        var day = hour * 24;
-        
-        var d = Math.floor(gap / (day));
-        var h = Math.floor((gap % (day)) / (hour));
-        var m = Math.floor((gap % (hour)) / (minute));
-        var s = Math.floor((gap % (minute)) / second);
-        
-        document.getElementById('day').innerText = d;
-        document.getElementById('hour').innerText = h;
-        document.getElementById('minute').innerText = m;
-        document.getElementById('second').innerText = s;
-      }
-      
-      setInterval(function() {
-        newYear();
-      }, 1000)
-    </script>
-  </body>
 </html>
