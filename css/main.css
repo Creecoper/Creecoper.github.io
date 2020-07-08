@@ -1,71 +1,328 @@
-
-
-.flex-item {
-    display: flex;
-    align-items: center;
-}
-.flex-item img{
-    flex-grow:0;
-    flex-shrink:0;
-}
-h1.ariel {
-    font-family: Arial, Helvetica, sans-serif;
-}
-div.ariel {
-    font-family: Arial, Helvetica, sans-serif;
-}
-ul {
-    list-style-type: none;
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #23272A;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #7289DA;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
 }
 
-li {
-    float: right;
+b {
+    color: black;
 }
 
-li a {
-    display: block;
-    color: white;
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    font-size: 14px !important;
+}
+
+.navbar {
+    box-shadow: none !important
+}
+
+.navbar-brand {
+    font-size: 25px !important
+}
+
+.navbar-toggler-icon {
+    color: #fff !important
+}
+
+#social-test {
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    font-size: 30px;
+}
+h1 {
+    color:#fff;
+    font-family: 'Poppins', sans-serif !important;
+
+}
+h3 {
+    color:#fff;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 20px;
+
+}
+#social-test h2 {
+    color: #fff;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
 }
 
-li a:hover:not(.active) {
-    background-color: #7289DA;
+#social-test .social {
+    padding-left: 0px;
 }
 
-.active {
-    background-color: #7289DA;
+#social-test li {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    border: 1px solid rgba(167, 146, 129, 0);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease 0.3s;
 }
-.synx-table {
+
+#social-test li:hover {
+    color: #ffffff44;
+    border: 1px solid #ffffff00;
+}
+
+.social:hover>li {
+    opacity: 0.5;
+}
+
+.social:hover>li:hover {
+    opacity: 1;
+}
+
+.btn {
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.btn-primary {
+    background-color: #7289DA !important
+}
+
+.btn-secondary {
+    background-color: #2C2F33 !important
+}
+
+.heading {
+    padding: 160px 50px !important;
+    color: #fff !important;
+    background-image: url("https://auxetite-cdn.sirv.com/wavy-blurple-by-nouridio.svg") !important;
+    background-position: bottom !important;
+    background-size: 200% !important;
+    background-repeat: no-repeat !important;
+}
+
+.title {
+    line-height: 90px !important;
+    margin-bottom: -2px !important;
+    font-size: 36px !important
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.61) !important;
+    font-size: 16px !important;
+}
+
+.features {
+    text-align: center !important;
+    background: #7289DA !important;
+    padding: 60px 50px !important
+}
+.features-1 {
+    text-align: center !important;
+    background: rgba(114, 137, 218, 0) !important;
+    padding: 60px 50px !important
+}
+
+.features .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+}
+
+.features .subtitle {
+    font-size: 20px !important;
+    color: #a2a8bd;
+}
+
+.cards {
+    margin-top: 30px !important;
+}
+
+.card {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+}
+
+.card-title {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #7289DA !important;
+}
+
+.statistics {
+    background-color: rgba(35, 39, 42, 0) !important;
+    text-align: center !important;
+    padding: 20px 20px !important;
+}
+
+.statistics .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+}
+
+.statistics .subtitle {
+    font-size: 20px !important;
+    color: #a2a8bd;
+}
+
+.card.statistic {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #f7f7f7 !important;
+}
+
+.start {
+    text-align: center !important;
+    background: #7289DA !important;
+    padding: 60px 50px !important
+}
+
+.start .card {
+    background: rgba(255, 255, 255, 0.83) !important;
+    color: #353e4c !important;
+}
+
+.start .card .subtitle {
+    color: rgba(53, 62, 76, 0.6) !important;
+    font-size: 16px !important;
+}
+
+.footer {
+    text-align: center !important;
+    background: #353e4c !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    font-size: 14px !important
+}
+
+.footer a {
+    color: #6086f6 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  
+  .button-git {
+    top: 0;
+    right: 20px;
     position: absolute;
-    width: 100%;
     color: white;
-    margin-top: 150px;
-}
-.synx-table {
-    margin-top: 100px;
-}
-.butn {
-  background: #7288da;
-  -webkit-border-radius: 17;
-  -moz-border-radius: 17;
-  border-radius: 17px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+  }
+  .button-git:hover {
+    cursor: pointer;
+    color: white;
+  }
 
-.butn:hover {
-  background: #7e95e6;
-  text-decoration: none;
-}
-a {
-  color: white;
-  text-decoration: none; /* no underline */
-}
+  .button-insta {
+    top: 0;
+    right: 90px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+  }
+  .button-insta:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .button-twit {
+    top: 0;
+    right: 160px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+  }
+  .button-twit:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .button-dis {
+    top: 0;
+    right: 230px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+  }
+  .button-dis:hover {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .discord:hover {
+    background: #7289DA;
+  }
+  
+  .twitter:hover {
+    background: #1da1f2;
+  }
+  
+  .instagram:hover {
+    background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  }
+  
+  .github:hover {
+    background: black;
+  }
+  
+  .codepen:hover {
+    background: #1e1f26;
+  }
+  
+  .reddit:hover {
+    background: #ff6314;
+  }
+  a {
+      font-size: 150%;
+      vertical-align: auto;
+      text-align: left;
+  }
